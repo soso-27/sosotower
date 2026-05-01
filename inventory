@@ -1,8 +1,10 @@
 [rocky]
-ansible1
-ansible2
-ansible3
+ansible5
+ansible7
+ansible33
 
 
 [ubuntu]
 ubuntu7
+ubuntu17
+ubuntu31
