@@ -4,13 +4,13 @@
   become: false
   vars:
     tower_user: admin
-    tower_pass: password
-    tower_host: towerbridge.example.com
-    tower_job: updatecache
+    tower_pass: Belkari1
+    tower_host: tower.example.com
+    tower_job: gatherfacts
   tasks:
   - name: launch {{ tower_job }}
     uri:
-      url: https://{{ tower_host }}/api/v2/job_templates/{{ tower_job }}/launch/
+      url: https://{{ tower_host }}/api/controller/v2/job_templates/{{ tower_job }}/launch/
       method: POST
       validate_certs: no
       return_content: yes
